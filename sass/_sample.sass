@@ -1,0 +1,28 @@
+$total-columns: 12
+$column-width: 60px
+$gutter-width: 20px
+$grid-padding: 10px
+$ipad:767px 8
+$mobile: 240px 4
+.one
+	+container
+.wrap
+	+at-breakpoint($mobile)
+		+container
+		+susy-grid-background
+	+at-breakpoint($ipad)
+		+container
+		+susy-grid-background
+.box
+	height: 500px
+	background: #000
+	+at-breakpoint($mobile)
+		+span-columns(2)
+	+at-breakpoint($ipad)
+		+span-columns(2)
+.side
+	height: 500px
+	background: red
+	+at-breakpoint($mobile)
+		+span-columns(2)
+	
